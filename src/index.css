@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a, svg {
+display: block}
+  a{
+    display: inline-block;
+    position: relative ;
+    height: 50px ;
+    width: 50px ;
+  }
+    
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+.icon{
+  background: black ;
+  border-radius: 100%;
+  color: whit; 
+  fill: white;
+      color: black ;
+    fill: black;
+}
+.facebook {
+    color: #3B579D ;
+    fill: #3B579D;
+}
+.github {
+  background: white;
+  color : black ;
+  fill: black  ;
+    
+}
+.linkedin{
+    color: #007BB6 ;
+    fill: #007BB6;
 }
