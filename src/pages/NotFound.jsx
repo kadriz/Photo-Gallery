@@ -7,7 +7,9 @@ function NotFound() {
           <h1 className='text-8xl font-bold mb-8'>Oops!</h1>
           <p className='text-5xl mb-8'>404 - Page Not Found!</p>
           <Link to='/'>
-        <button className= "btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Back To Home</button>
+            <div className='flex justify-center'>
+        <button className="btn btn-wide ">Back To Home</button>
+        </div>
            </Link>
       </div>
       </div>

@@ -1,5 +1,7 @@
 import {useContext, useState} from 'react'
 import AlertContext from '../context/alert/AlertContext'
+import Alert from '../components/layout/Alert'
+
 function Contact() {
 const {setAlert} =useContext(AlertContext)
 const [text, setText] = useState('')
@@ -43,6 +45,7 @@ const handleEmailChange = ({ target: { value } })=>{
               <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
               <input value ={message} onChange={handleMessageChange} type="text" id="subject" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Leave a comment..." />
           </div>
+          <Alert/>
      <div className='flex justify-center '>
    <button type="submit"className="btn btn-outline my-3 py-3 px-5 text-sm font-medium text-center rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
       </div>

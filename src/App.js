@@ -5,7 +5,6 @@ import About from './pages/About'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import Contact from './pages/Contact'
-import Alert from './components/layout/Alert'
 import SuccesMessage from './components/layout/SuccesMessage'
 import {PixabayProvider} from './context/pixabay/PixabayContext'
 import { AlertProvider } from './context/alert/AlertContext'
@@ -14,12 +13,9 @@ function App() {
     <PixabayProvider>
       <AlertProvider>
     <Router >
-      <div className='flex flex-col justify-between h-screen'>
+  <div className='flex flex-col justify-between h-screen'>
 <Navbar/>
 <main className='container mx-auto px-3 pb-12'>
-<div className='flex justify-center '>
-    <Alert/>
-</div>
 <Routes>
 <Route path='/' element={<Home/>}/>
 <Route path='/about' element={<About/>}/>
@@ -36,4 +32,4 @@ function App() {
    </PixabayProvider>
   )
 }
-export default App;
+export default App
