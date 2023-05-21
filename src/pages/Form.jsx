@@ -40,7 +40,7 @@ dispatch({type:'GET_IMAGES',payload :images})
 async function magicLinkLogin() {
  
   if (mail==='') {
-   alert('Please insert an email adress')
+   alert('Please insert an email address')
   }else {
   const { data } = await supabase.auth.signInWithOtp({
     email: mail ,
