@@ -47,7 +47,7 @@ async function magicLinkLogin() {
  })
   setAlert ('Check your email for a Supabase Magic Link to log in!','succes')
   setMail('')
-}  
+}
 }   
 async function signOut() {
   const { error } = await supabase.auth.signOut()
