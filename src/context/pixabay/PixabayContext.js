@@ -4,7 +4,8 @@ const PixabayCotext = createContext ()
 export const PixabayProvider = ({children})=> {
     const initialState = {
         photos:[],
-        loading:false,
+        images:[],
+        loading:false
     }
     const [state,dispatch]=useReducer(PixabayReducer,initialState)
  return (

@@ -6,6 +6,8 @@ import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import Contact from './pages/Contact'
 import SuccesMessage from './components/layout/SuccesMessage'
+import Store from './pages/Store'
+import Form from './pages/Form'
 import {PixabayProvider} from './context/pixabay/PixabayContext'
 import { AlertProvider } from './context/alert/AlertContext'
 function App() {
@@ -23,6 +25,8 @@ function App() {
 <Route path='/notfound' element={<NotFound/>}/>
 <Route path='/*' element={<NotFound/>}/>
 <Route path='/succesmessage' element={<SuccesMessage/>}/>
+<Route path='/store' element={<Store/>}/>
+<Route path='/form' element={<Form/>}/>
 </Routes>
 </main>
 <Footer/>

@@ -17,6 +17,8 @@ function Navbar() {
             <Link to='/about' className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</Link>
 
             <Link to='/contact'  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
+            <Link to='/store'  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 ml-50 text-sm font-medium">Store Images</Link>
+
           </div>
         </div>
   </div>

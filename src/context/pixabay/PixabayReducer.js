@@ -6,6 +6,11 @@ switch(action.type){
 photos:action.payload,
 loading:false,
         }
+        case 'GET_IMAGES':
+        return {
+...state,
+images:action.payload,
+        }
         case 'SET_LOADING':
             return {
                 ...state,
