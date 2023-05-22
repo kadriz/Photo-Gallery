@@ -99,7 +99,6 @@ async function signInWithGoogle() {
       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"> Welcome to ImageWall !</h2>
        
        <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Enter an email to sign in with Supabase Magic Link</p>
-         <Alert/> 
         <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
         
           <div >
@@ -108,7 +107,8 @@ async function signInWithGoogle() {
               <div className='flex justify-center '>
          <button onClick={(e)=>(magicLinkLogin(), e.preventDefault())} className="btn btn-outline my-3 py-3 px-5 text-sm font-medium text-center rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"> Get Magic Link</button>
           </div>
-          </div>
+           <Alert/> 
+           </div>
           <div className="relative flex items-center justify-center w-full mt-6 border border-t">
                     <div className="absolute px-5 bg-white">Or</div>
                 </div>
